@@ -1,10 +1,13 @@
 .App {
-  text-align: center;
+  text-align: left;
+  background: linear-gradient(180deg, rgb(0, 5, 12), rgb(18, 22, 82));
+  /* background-color: rgb(110, 81, 128); */
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  min-height: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {

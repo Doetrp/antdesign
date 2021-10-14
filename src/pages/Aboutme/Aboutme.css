@@ -1,0 +1,13 @@
+.TextHeader {
+    text-align: center;
+    font-size: 50px;
+  }
+.inBody {
+  text-align: left;
+  font-size: 30px;
+}
+.bugget {
+  border-right:4px solid;
+  border-top:4px solid;border-left:4px solid;
+  border-bottom:4px solid
+}
