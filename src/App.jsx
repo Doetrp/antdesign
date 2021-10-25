@@ -29,7 +29,7 @@ function App() {
               <Link to="/contact">Contact</Link>
             </Menu.Item>
             <Menu.Item key="4" icon={<RedditOutlined />}>
-              <Link to="/aboutme">Aboutme</Link>
+              <Link to="/aboutme">รายรับ-รายจ่าย</Link>
             </Menu.Item>
           </Menu>
         </Sider>
@@ -52,7 +52,7 @@ function App() {
                 <Link to="/contact">Contact</Link>
               </Breadcrumb.Item>
               <Breadcrumb.Item>
-                <Link to="/aboutme">Aboutme</Link>
+                <Link to="/aboutme">รายรับ-รายจ่าย</Link>
               </Breadcrumb.Item>
             </Breadcrumb>
             <div

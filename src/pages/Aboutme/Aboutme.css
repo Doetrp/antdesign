@@ -1,6 +1,8 @@
-.TextHeader {
-    text-align: center;
+.ant-card {
+    text-align: left;
     font-size: 50px;
+    background: linear-gradient(180deg, rgb(0, 5, 12), rgb(18, 22, 82)); 
+    width: 500
   }
 .inBody {
   text-align: left;
