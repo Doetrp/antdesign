@@ -9,26 +9,30 @@ export default function Aboutme() {
     console.log(event.target.value);
   };
   const inputCheck = (event) => {
-    console.log(event);
-  }
+    console.log(event[0]);
+  };
   const { Group } = Checkbox;
   const onFinish = (values) => {
-    const value = {
-      ...values,
-    };
+      // ...values,
+      const value = {
+          จำนวนเงิน: values.จำนวนเงิน,
+          รายการ: values.จำนวนเงิน,
+          รายจ่าย: values.รายจ่าย ? values.รายจ่าย[0]:undefined,
+          รายรับ: values.รายรับ ? values.รายรับ[0]:undefined
+        }
     console.log("value:", value);
   };
   const optionsWork = [
-    { label: 'ค่าอาหาร', value: 'ค่าอาหาร',},
-    { label: 'ค่าที่พัก', value: 'ค่าที่พัก' },
-    { label: 'ค่าเดินทาง', value: 'ค่าเดินทาง' },
-    { label: 'ค่าอื่นๆ', value: 'ค่าอื่นๆ' },
+    { label: "ค่าอาหาร", value: "ค่าอาหาร" },
+    { label: "ค่าที่พัก", value: "ค่าที่พัก" },
+    { label: "ค่าเดินทาง", value: "ค่าเดินทาง" },
+    { label: "ค่าอื่นๆ", value: "ค่าอื่นๆ" },
   ];
   const optionsWork2 = [
-    { label: 'เงินเดือน', value: 'เงินเดือน' },
-    { label: 'ได้เงินคืน', value: 'ได้เงินคืน' },
-    { label: 'ไปยืมมา', value: 'ไปยืมมา' },
-    { label: 'ค่าอื่นๆ', value: 'ค่าอื่นๆ' },
+    { label: "เงินเดือน", value: "เงินเดือน" },
+    { label: "ได้เงินคืน", value: "ได้เงินคืน" },
+    { label: "ไปยืมมา", value: "ไปยืมมา" },
+    { label: "ค่าอื่นๆ", value: "ค่าอื่นๆ" },
   ];
   return (
     <div style={{ textItem: "center" }}>
@@ -37,7 +41,6 @@ export default function Aboutme() {
         bordered={false}
         type="inner"
         className="ant-card"
-        // style= {{width: 500}}
       >
         <div>
           <Form
@@ -75,26 +78,14 @@ export default function Aboutme() {
                 onChange={inputAmount}
               />
             </Form.Item>
-            <Form.Item
-              label="รายรับ"
-              name="รายรับ"
-              valuePropName="check"
-            >
-              <Group options={optionsWork2} />
+            <Form.Item label="รายรับ" name="รายรับ" valuePropName="check">
+              <Group options={optionsWork2} onChange={inputCheck}/>
             </Form.Item>
-            <Form.Item
-              label="รายจ่าย"
-              name="รายจ่าย"
-              valuePropName="checked"
-            >
-              <Group options={optionsWork} onChange={inputCheck}/>
+            <Form.Item label="รายจ่าย" name="รายจ่าย" valuePropName="checked">
+              <Group options={optionsWork} onChange={inputCheck} />
             </Form.Item>
             <Form.Item>
-              <Button
-                type="primary"
-                htmlType="submit"
-                shape="round"
-              >
+              <Button type="primary" htmlType="submit" shape="round">
                 submit
               </Button>
             </Form.Item>

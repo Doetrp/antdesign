@@ -3,7 +3,13 @@
   background: linear-gradient(180deg, rgb(0, 5, 12), rgb(18, 22, 82));
   /* background-color: rgb(110, 81, 128); */
 }
-
+.logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

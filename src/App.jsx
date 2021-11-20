@@ -13,11 +13,11 @@ import {
 
 const { Header, Content, Footer, Sider } = Layout;
 function App() {
-  // const { collapsed } = this.state;
   return (
     <Router>
       <Layout style={{ minHeight: "100vh" }}>
         <Sider>
+          <div className="logo" />
           <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
             <Menu.Item key="1" icon={<HomeOutlined />}>
               <Link to="/">Home</Link>
@@ -36,7 +36,7 @@ function App() {
         <Layout className="site-layout">
           <Header
             className="site-layout-background"
-            style={{ padding: 0, color:"white" }}
+            style={{ padding: 0, color: "white" }}
           >
             BROTHER AUTO PART & ENGINEERING COMPANY LIMITED
           </Header>
