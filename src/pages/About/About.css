@@ -2,3 +2,21 @@
     text-align: center;
     background-color: rgb(202, 202, 109);
   }
+.aboutText {
+  text-align: left;
+  margin-left: 45px;
+  font-size: 25px;
+}
+.aboutFill {
+  text-align: left;
+  font-size: 25px;
+}
+.aboutImage {
+  width: 150px ;
+  border: 3px solid black;
+}
+.aboutTextCenter {
+  text-align: center;
+  margin-left: 45px;
+  font-size: 25px;
+}

@@ -36,14 +36,14 @@ function App() {
               <Link to="/contact">Contact</Link>
             </Menu.Item>
             <Menu.Item key="4" icon={<RedditOutlined />}>
-              <Link to="/IncomeandExpenses">IncomeandExpenses</Link>
+              <Link to="/IncomeandExpenses">Income and Expenses</Link>
             </Menu.Item>
           </Menu>
         </Sider>
         <Layout className="site-layout" style={{ marginLeft: 200 }}>
           <Header
             className="site-layout-background"
-            style={{ padding: 0, color: "white" }}
+            style={{ padding: 0, color: "white", textAlign: "center" }}
           >
             all my projects
           </Header>
