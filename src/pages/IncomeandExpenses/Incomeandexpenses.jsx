@@ -1,7 +1,7 @@
-import "./Aboutme.css";
+import "./Incomeandexpenses.css";
 import { Card, Button, Input, Form, Checkbox } from "antd";
 
-export default function Aboutme() {
+export default function IncomeandExpenses() {
   const inputTitle = (event) => {
     console.log(event.target.value);
   };
@@ -13,13 +13,13 @@ export default function Aboutme() {
   };
   const { Group } = Checkbox;
   const onFinish = (values) => {
-      // ...values,
-      const value = {
-          จำนวนเงิน: values.จำนวนเงิน,
-          รายการ: values.จำนวนเงิน,
-          รายจ่าย: values.รายจ่าย ? values.รายจ่าย[0]:undefined,
-          รายรับ: values.รายรับ ? values.รายรับ[0]:undefined
-        }
+    // ...values,
+    const value = {
+      จำนวนเงิน: values.จำนวนเงิน,
+      รายการ: values.จำนวนเงิน,
+      รายจ่าย: values.รายจ่าย ? values.รายจ่าย[0] : undefined,
+      รายรับ: values.รายรับ ? values.รายรับ[0] : undefined,
+    };
     console.log("value:", value);
   };
   const optionsWork = [
@@ -41,6 +41,7 @@ export default function Aboutme() {
         bordered={false}
         type="inner"
         className="ant-card"
+        style={{ background: "white" }}
       >
         <div>
           <Form
@@ -79,7 +80,7 @@ export default function Aboutme() {
               />
             </Form.Item>
             <Form.Item label="รายรับ" name="รายรับ" valuePropName="check">
-              <Group options={optionsWork2} onChange={inputCheck}/>
+              <Group options={optionsWork2} onChange={inputCheck} />
             </Form.Item>
             <Form.Item label="รายจ่าย" name="รายจ่าย" valuePropName="checked">
               <Group options={optionsWork} onChange={inputCheck} />

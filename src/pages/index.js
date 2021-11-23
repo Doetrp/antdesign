@@ -1,4 +1,4 @@
 export {Contact} from "./Contact";
-export {Home} from "./Home";
+export {Rapper} from "./Rapper/Rapper";
 export {About} from "./About";
-export {Aboutme} from "./Aboutme";
+export {IncomeandExpenses} from "./IncomeandExpenses";
