@@ -2,10 +2,12 @@ import "antd/dist/antd.css";
 import { Carousel, Image } from "antd";
 import React, { useState } from "react";
 
+import MainLayout from "../../common/MainLayout";
+
 export function Rapper() {
   const [visible, setVisible] = useState(false);
   return (
-    <div>
+    <MainLayout>
       <Carousel autoplay>
         <div>
           <Image
@@ -159,6 +161,6 @@ export function Rapper() {
           </div>
         </div>
       </div>
-    </div>
+    </MainLayout>
   );
 }

@@ -2,9 +2,11 @@ import "./About.css";
 import { Row, Col, Image } from "antd";
 import "antd/dist/antd.css";
 
+import MainLayout from "../../common/MainLayout";
+
 export default function About() {
   return (
-    <div>
+    <MainLayout>
       <Row>
         <Col style={{ textAlign: "center", fontSize: "50px" }} span={24}>
           My Profile
@@ -60,6 +62,6 @@ export default function About() {
           />
         </Col>
       </Row>
-    </div>
+    </MainLayout>
   );
 }

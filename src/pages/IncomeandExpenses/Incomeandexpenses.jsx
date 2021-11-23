@@ -1,6 +1,8 @@
 import "./Incomeandexpenses.css";
 import { Card, Button, Input, Form, Checkbox } from "antd";
 
+import MainLayout from "../../common/MainLayout";
+
 export default function IncomeandExpenses() {
   const inputTitle = (event) => {
     console.log(event.target.value);
@@ -35,64 +37,66 @@ export default function IncomeandExpenses() {
     { label: "ค่าอื่นๆ", value: "ค่าอื่นๆ" },
   ];
   return (
-    <div style={{ textItem: "center" }}>
-      <Card
-        title="รายรับ - รายจ่าย"
-        bordered={false}
-        type="inner"
-        className="ant-card"
-        style={{ background: "white" }}
-      >
-        <div>
-          <Form
-            name="basic"
-            labelCol={{
-              span: 5,
-            }}
-            onFinish={onFinish}
-          >
-            <Form.Item
-              label="ชื่อรายการ"
-              name="รายการ"
-              rules={[
-                {
-                  required: true,
-                  message: "กรุณาระบุรายการ!",
-                },
-              ]}
+    <MainLayout>
+      <div style={{ textItem: "center" }}>
+        <Card
+          title="รายรับ - รายจ่าย"
+          bordered={false}
+          type="inner"
+          className="ant-card"
+          style={{ background: "white" }}
+        >
+          <div>
+            <Form
+              name="basic"
+              labelCol={{
+                span: 5,
+              }}
+              onFinish={onFinish}
             >
-              <Input type="text" placeholder="รายการ" onChange={inputTitle} />
-            </Form.Item>
-            <Form.Item
-              label="จำนวนเงิน"
-              name="จำนวนเงิน"
-              rules={[
-                {
-                  required: true,
-                  message: "กรุณากรอกจำนวนเงิน!",
-                },
-              ]}
-            >
-              <Input
-                type="number"
-                placeholder="จำนวนเงิน"
-                onChange={inputAmount}
-              />
-            </Form.Item>
-            <Form.Item label="รายรับ" name="รายรับ" valuePropName="check">
-              <Group options={optionsWork2} onChange={inputCheck} />
-            </Form.Item>
-            <Form.Item label="รายจ่าย" name="รายจ่าย" valuePropName="checked">
-              <Group options={optionsWork} onChange={inputCheck} />
-            </Form.Item>
-            <Form.Item>
-              <Button type="primary" htmlType="submit" shape="round">
-                submit
-              </Button>
-            </Form.Item>
-          </Form>
-        </div>
-      </Card>
-    </div>
+              <Form.Item
+                label="ชื่อรายการ"
+                name="รายการ"
+                rules={[
+                  {
+                    required: true,
+                    message: "กรุณาระบุรายการ!",
+                  },
+                ]}
+              >
+                <Input type="text" placeholder="รายการ" onChange={inputTitle} />
+              </Form.Item>
+              <Form.Item
+                label="จำนวนเงิน"
+                name="จำนวนเงิน"
+                rules={[
+                  {
+                    required: true,
+                    message: "กรุณากรอกจำนวนเงิน!",
+                  },
+                ]}
+              >
+                <Input
+                  type="number"
+                  placeholder="จำนวนเงิน"
+                  onChange={inputAmount}
+                />
+              </Form.Item>
+              <Form.Item label="รายรับ" name="รายรับ" valuePropName="check">
+                <Group options={optionsWork2} onChange={inputCheck} />
+              </Form.Item>
+              <Form.Item label="รายจ่าย" name="รายจ่าย" valuePropName="checked">
+                <Group options={optionsWork} onChange={inputCheck} />
+              </Form.Item>
+              <Form.Item>
+                <Button type="primary" htmlType="submit" shape="round">
+                  submit
+                </Button>
+              </Form.Item>
+            </Form>
+          </div>
+        </Card>
+      </div>
+    </MainLayout>
   );
 }
