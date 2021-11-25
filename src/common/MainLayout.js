@@ -47,7 +47,7 @@ function MainLayout({ children }) {
         >
           all my projects
         </Header>
-        <Content style={{ margin: "24px 16px 0", overflow: "initial" }}>
+        <Content style={{ margin: "24px 16px 0", height: "200vh" }}>
           {children}
         </Content>
       </Layout>

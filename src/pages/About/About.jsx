@@ -1,6 +1,8 @@
 import "./About.css";
 import { Row, Col, Image } from "antd";
 import "antd/dist/antd.css";
+import { Button } from "antd";
+import { Link } from "react-router-dom";
 import MainLayout from "../../common/MainLayout";
 
 export default function About() {
@@ -50,9 +52,64 @@ export default function About() {
             </Row>
           </Col>
         </Row>
-        <Row className="aboutTextCenter">
-          <Col span={20}>
-            <label>dsfgdhfjgfhdsd</label>
+        <Row className="aboutFill">
+          <Col span={5}>
+            <Row>
+              <label>My Address :</label>
+            </Row>
+            <Row>
+              <label>My hobby :</label>
+            </Row>
+            <br />
+            <Row>
+              <label>Educational record :</label>
+            </Row>
+            <br />
+            <Row>
+              <label>Work experience :</label>
+            </Row>
+            <br />
+            <br />
+            <Row>
+              <label>My contract :</label>
+            </Row>
+          </Col>
+          <Col span={15}>
+            <Row>
+              <label>
+                59/5 หมู่ 5 ตำบล บ้านแก่ง อำเภอเมืองฯ จังหวัดนครสวรรค์
+              </label>
+            </Row>
+            <Row>
+              <label>
+                In his spare time, he likes to watch movies, listen to music,
+                cook and play music.
+              </label>
+            </Row>
+            <Row>
+              <label>
+                2014-2016 : Studying in Photisansuksa in Nakhonsawan
+                <br />
+                2017-2020 : Studying in Nareasuan University
+              </label>
+            </Row>
+            <Row>
+              <label>
+                2016 : Work part time at big c
+                <br />
+                2018-2021 : work part time at restaurant Beef r us
+                <br />
+                2021-present : Work at brother auto parts ann engineering
+              </label>
+            </Row>
+            <Row>
+              <label>
+                if you want to know my contact
+                <br />
+                please press the button
+                <br />
+              </label>
+            </Row>
           </Col>
           <Col span={4}>
             <Image
@@ -62,6 +119,20 @@ export default function About() {
             />
           </Col>
         </Row>
+        <label
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            fontSize: "50px",
+          }}
+        >
+          ⇩
+        </label>
+        <div style={{ textAlign: "center" }}>
+          <Button style={{ background: "#434343", width: "350px", height: "90px", fontSize: "50px"}} shape="round">
+            <Link to="/contact">☠✇☹卐</Link>
+          </Button>
+        </div>
       </div>
     </MainLayout>
   );
