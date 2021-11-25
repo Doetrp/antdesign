@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { Layout, Menu } from "antd";
 import { Link } from "react-router-dom";
 import {
@@ -12,6 +13,7 @@ const { Header, Content, Sider } = Layout;
 
 function MainLayout({ children }) {
   // children คือ page ที่ run component
+  const {pathname} = useLocation()
   return (
     <Layout>
       <Sider
@@ -23,17 +25,17 @@ function MainLayout({ children }) {
         }}
       >
         <div className="logo" />
-        <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
-          <Menu.Item key="1" icon={<HomeOutlined />}>
+        <Menu theme="dark" defaultSelectedKeys={[pathname]} mode="inline">
+          <Menu.Item key="/" icon={<HomeOutlined />}>
             <Link to="/">Rapper</Link>
           </Menu.Item>
-          <Menu.Item key="2" icon={<PieChartOutlined />}>
+          <Menu.Item key="/about" icon={<PieChartOutlined />}>
             <Link to="/about">About</Link>
           </Menu.Item>
-          <Menu.Item key="3" icon={<DesktopOutlined />}>
+          <Menu.Item key="/contact" icon={<DesktopOutlined />}>
             <Link to="/contact">Contact</Link>
           </Menu.Item>
-          <Menu.Item key="4" icon={<RedditOutlined />}>
+          <Menu.Item key="/IncomeandExpenses" icon={<RedditOutlined />}>
             <Link to="/IncomeandExpenses">Income and Expenses</Link>
           </Menu.Item>
         </Menu>
