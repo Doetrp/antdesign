@@ -12,28 +12,28 @@ export function Rapper() {
         <Image
           preview={{ visible: false }}
           height={300}
-          width={1260}
+          width={1400}
           src="https://cdn.gamingdose.com/wp-content/uploads/2020/07/Logic-1.jpeg"
           onClick={() => setVisible(true)}
         />
         <Image
           preview={{ visible: false }}
           height={300}
-          width={1260}
+          width={1400}
           src="https://i2.wp.com/wikiofcelebs.com/wp-content/uploads/2021/07/NF.jpg?w=1077&ssl=1"
           onClick={() => setVisible(true)}
         />
         <Image
           preview={{ visible: false }}
           height={300}
-          width={1260}
+          width={1400}
           src="https://cms.thaiticketmajor.com/imgUpload/imgeditor/01-Eminem-press-by-Craig-McDean-2019-billboard-1548-1024x677.jpg"
           onClick={() => setVisible(true)}
         />
         <Image
           preview={{ visible: false }}
           height={300}
-          width={1260}
+          width={1400}
           src="https://urbanmashup.files.wordpress.com/2016/01/macklemore-white-privilege-ii.jpg?w=625&h=340&crop=1"
           onClick={() => setVisible(true)}
         />
@@ -55,7 +55,7 @@ export function Rapper() {
         <div class="ant-row featureList___3LuG-">
           <div class="ant-col featureItem___IkTjD ant-col-md-6">
             <div class="featureContent___3hjXF" style={{margin: "10px"}}>
-              <Link to="/contact">
+              <Link to="/Rapper/Eminem">
                 <img
                   src="https://scontent.fbkk28-1.fna.fbcdn.net/v/t31.18172-8/11021448_1567723720153209_457006623157917643_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=973b4a&_nc_ohc=7XEFAlRcqXAAX8sWlDC&_nc_ht=scontent.fbkk28-1.fna&oh=a096b9d62e8cac71be673f26899e30ec&oe=61C2AAD5"
                   alt="Eminem"

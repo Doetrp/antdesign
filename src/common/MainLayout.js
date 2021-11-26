@@ -13,7 +13,10 @@ const { Header, Content, Sider } = Layout;
 
 function MainLayout({ children }) {
   // children คือ page ที่ run component
-  const {pathname} = useLocation()
+  let { pathname } = useLocation();
+  pathname = pathname.split('/')
+  // .split('/')
+  console.log(pathname);
   return (
     <Layout>
       <Sider
@@ -24,18 +27,22 @@ function MainLayout({ children }) {
           left: 0,
         }}
       >
-        <div className="logo" />
-        <Menu theme="dark" defaultSelectedKeys={[pathname]} mode="inline">
-          <Menu.Item key="/" icon={<HomeOutlined />}>
-            <Link to="/">Rapper</Link>
+        <div className="logo"><label class="text-gradient">All projects</label></div>
+        <Menu
+          theme="dark"
+          defaultSelectedKeys={[pathname[1]]}
+          mode="inline"
+        >
+          <Menu.Item key="Rapper" icon={<HomeOutlined />}>
+            <Link to="/Rapper">Rapper</Link>
           </Menu.Item>
-          <Menu.Item key="/about" icon={<PieChartOutlined />}>
+          <Menu.Item key="about" icon={<PieChartOutlined />}>
             <Link to="/about">About</Link>
           </Menu.Item>
-          <Menu.Item key="/contact" icon={<DesktopOutlined />}>
-            <Link to="/contact">Contact</Link>
+          <Menu.Item key="contact" icon={<DesktopOutlined />}>
+            <Link to="contact">Contact</Link>
           </Menu.Item>
-          <Menu.Item key="/IncomeandExpenses" icon={<RedditOutlined />}>
+          <Menu.Item key="IncomeandExpenses" icon={<RedditOutlined />}>
             <Link to="/IncomeandExpenses">Income and Expenses</Link>
           </Menu.Item>
         </Menu>
@@ -44,10 +51,8 @@ function MainLayout({ children }) {
         <Header
           className="site-layout-background"
           style={{ padding: 0, color: "white", textAlign: "center" }}
-        >
-          all my projects
-        </Header>
-        <Content style={{ margin: "24px 16px 0", height: "200vh" }}>
+        />
+        <Content style={{ margin: "0", height: "200vh" }}>
           {children}
         </Content>
       </Layout>

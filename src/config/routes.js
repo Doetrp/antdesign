@@ -1,10 +1,11 @@
 import { Route, Switch } from "react-router-dom";
 import { Rapper, Contact, About, IncomeandExpenses } from "../mainpage";
+import { Eminem } from "../subpage";
 
 const Routers = () => {
   return (
     <Switch>
-      <Route exact path="/">
+      <Route exact path="/Rapper">
         <Rapper />
       </Route>
       <Route exact path="/about">
@@ -15,6 +16,9 @@ const Routers = () => {
       </Route>
       <Route exact path="/IncomeandExpenses">
         <IncomeandExpenses />
+      </Route>
+      <Route exact path="/Rapper/Eminem">
+        <Eminem />
       </Route>
     </Switch>
   );
