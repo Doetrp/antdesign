@@ -1,5 +1,5 @@
 import { Route, Switch } from "react-router-dom";
-import { Rapper, Contact, About, IncomeandExpenses } from "../pages";
+import { Rapper, Contact, About, IncomeandExpenses } from "../mainpage";
 
 const Routers = () => {
   return (

@@ -1,5 +1,5 @@
-import MainLayout from "../common/MainLayout";
-export function Contact() {
+import MainLayout from "../../common/MainLayout";
+export default function Contact() {
   return (
     <MainLayout>
       <div>
