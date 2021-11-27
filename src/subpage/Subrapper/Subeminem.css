@@ -7,4 +7,10 @@
   font-family: "Times New Roman", Times, serif;
   font-size: 25px;
   font-weight: normal;
+  margin: 10px;
+  padding: 10px;
+}
+.subEminemImage {
+  margin: 10px;
+  text-align: center;
 }

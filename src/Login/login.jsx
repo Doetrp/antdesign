@@ -71,10 +71,8 @@ export default function Login() {
           >
             <Checkbox>Remember me</Checkbox>|
             <div style={{display : "inline-block", color: "black", marginLeft: "10px" }}>
-              <Link to="">
-                <label style={{ color: "black" }}>
+              <Link to="" style={{ color: "black" }}>
                   Register
-                </label>
               </Link>
             </div>
           </Form.Item>
