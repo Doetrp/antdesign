@@ -70,7 +70,7 @@ export function Rapper() {
           </div>
           <div class="ant-col featureItem___IkTjD ant-col-md-6">
             <div class="featureContent___3hjXF" style={{margin: "10px"}}>
-              <Link to="/contact">
+              <Link to="/Rapper/Logic">
                 <img
                   src="https://files.kstatecollegian.com/2018/10/sam_spratt_logic_ysiv_coverart_final.jpg"
                   alt="Logic"
@@ -85,7 +85,7 @@ export function Rapper() {
           </div>
           <div class="ant-col featureItem___IkTjD ant-col-md-6">
             <div class="featureContent___3hjXF" style={{margin: "10px"}}>
-              <Link to="/contact">
+              <Link to="/Rapper/NF">
                 <img
                   src="https://artist-assets.hubbardradio.com/nf-3_v1000.jpg"
                   alt="NF"
@@ -98,7 +98,7 @@ export function Rapper() {
           </div>
           <div class="ant-col featureItem___IkTjD ant-col-md-6">
             <div class="featureContent___3hjXF" style={{margin: "10px"}}>
-              <Link to="/contact">
+              <Link to="/Rapper/Macklemore">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Macklemore_The_Heist_Tour_1_cropped.jpg/800px-Macklemore_The_Heist_Tour_1_cropped.jpg"
                   alt="Macklemore"
@@ -113,7 +113,7 @@ export function Rapper() {
           </div>
           <div class="ant-col featureItem___IkTjD ant-col-md-6">
             <div class="featureContent___3hjXF" style={{margin: "10px"}}>
-              <Link to="/contact">
+              <Link to="/Rapper/Postmalone">
                 <img
                   src="https://s2.glbimg.com/PAK-TFsgopZmOpyFs7PmIHCJsfM=/e.glbimg.com/og/ed/f/original/2021/06/14/200615761_847973569261384_7456633515386536899_n.jpg"
                   alt="Post Malone"
@@ -126,7 +126,7 @@ export function Rapper() {
           </div>
           <div class="ant-col featureItem___IkTjD ant-col-md-6">
             <div class="featureContent___3hjXF" style={{margin: "10px"}}>
-              <Link to="/contact">
+              <Link to="/Rapper/Drake">
                 <img
                   src="https://images.mubicdn.net/images/cast_member/515896/cache-147075-1464590228/image-w856.jpg?size=240x"
                   alt="Drake"
@@ -139,7 +139,7 @@ export function Rapper() {
           </div>
           <div class="ant-col featureItem___IkTjD ant-col-md-6">
             <div class="featureContent___3hjXF" style={{margin: "10px"}}>
-              <Link to="/contact">
+              <Link to="/Rapper/Lukasjoyner">
                 <img
                   src="https://typebeats.com/wp-content/uploads/2021/04/joyner-lucas-type-beat.jpg"
                   alt="Lukas Joyner"

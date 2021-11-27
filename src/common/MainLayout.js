@@ -52,7 +52,7 @@ function MainLayout({ children }) {
           className="site-layout-background"
           style={{ padding: 0, color: "white", textAlign: "center" }}
         />
-        <Content style={{ margin: "0", height: "200vh" }}>
+        <Content style={{ margin: "0" }}>
           {children}
         </Content>
       </Layout>

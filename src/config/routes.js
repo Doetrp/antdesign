@@ -1,6 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import { Rapper, Contact, About, IncomeandExpenses } from "../mainpage";
-import { Eminem } from "../subpage";
+import { Eminem, Drake, Logic, Lukasjoyner, Macklemore, NF, Postmalone } from "../subpage";
 import { Login } from "../Login";
 
 
@@ -24,6 +24,24 @@ const Routers = () => {
       </Route>
       <Route exact path="/Rapper/Eminem">
         <Eminem />
+      </Route>
+      <Route exact path="/Rapper/Drake">
+        <Drake />
+      </Route>
+      <Route exact path="/Rapper/Logic">
+        <Logic />
+      </Route>
+      <Route exact path="/Rapper/Lukasjoyner">
+        <Lukasjoyner />
+      </Route>
+      <Route exact path="/Rapper/Macklemore">
+        <Macklemore />
+      </Route>
+      <Route exact path="/Rapper/NF">
+        <NF />
+      </Route>
+      <Route exact path="/Rapper/Postmalone">
+        <Postmalone />
       </Route>
     </Switch>
   );

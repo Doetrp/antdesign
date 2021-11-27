@@ -69,7 +69,6 @@ export default function Eminem() {
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
-                style={{ margin: "20px" }}
               />
             </div>
           </Col>
@@ -87,6 +86,57 @@ export default function Eminem() {
             Eminem Show ที่ขายดีที่สุดในปี 2002
             Eminemได้รับรางวัลแกรมมี่ทั้งจากอัลบั้ม Relapse และ Recovery
             ทำให้เขาได้รับรางวัลแกรมมีตลอดการทำงานของเขาทั้งสิ้น 13 รางวัล
+          </Col>
+          <Col span={1} />
+        </Row>
+        <Row>
+          <Col span={1} />
+          <Col span={22} style={{ textAlign: "center" }}>
+            <div class="videoWrapper">
+              <iframe
+                width="800"
+                height="450"
+                src="https://www.youtube.com/embed/9dcVOmEQzKA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
+            </div>
+          </Col>
+          <Col span={1} />
+        </Row>
+        <Row>
+          <Col span={1} />
+          <Col span={22} style={{ textAlign: "center" }}>
+            <div class="videoWrapper">
+              <iframe
+                width="800"
+                height="450"
+                src="https://www.youtube.com/embed/RSdKmX2BH7o"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
+            </div>
+          </Col>
+          <Col span={1} />
+        </Row>
+        <Row>
+          <Col span={1} />
+          <Col span={22} style={{ textAlign: "center" }}>
+            <div class="videoWrapper">
+              <iframe
+                width="800"
+                height="450"
+                src="https://www.youtube.com/embed/RHQC4fAhcbU"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
+            </div>
           </Col>
           <Col span={1} />
         </Row>
