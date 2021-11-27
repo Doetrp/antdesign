@@ -10,7 +10,7 @@ export default function Eminem() {
       <div className="subEminemBodyfont">
         <Row>
           <Col span={1} />
-          <Col span={22} style={{ textAlign: "center"}}>
+          <Col span={22} style={{ textAlign: "center" }}>
             <Image
               className="subEminemImage"
               src="https://scontent.fbkk28-1.fna.fbcdn.net/v/t31.18172-8/11021448_1567723720153209_457006623157917643_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=973b4a&_nc_ohc=7XEFAlRcqXAAX8sWlDC&_nc_ht=scontent.fbkk28-1.fna&oh=a096b9d62e8cac71be673f26899e30ec&oe=61C2AAD5"
@@ -60,16 +60,18 @@ export default function Eminem() {
         <Row>
           <Col span={1} />
           <Col span={22} style={{ textAlign: "center" }}>
-            <iframe
-              width="800"
-              height="450"
-              src="https://www.youtube.com/embed/eJO5HU_7_1w"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              style={{ margin: "20px" }}
-            />
+            <div class="videoWrapper">
+              <iframe
+                width="800"
+                height="450"
+                src="https://www.youtube.com/embed/eJO5HU_7_1w"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                style={{ margin: "20px" }}
+              />
+            </div>
           </Col>
           <Col span={1} />
         </Row>
