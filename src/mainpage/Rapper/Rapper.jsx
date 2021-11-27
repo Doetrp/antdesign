@@ -8,7 +8,7 @@ export function Rapper() {
   const [visible, setVisible] = useState(false);
   return (
     <MainLayout>
-      <Carousel autoplay>
+      <Carousel autoplay className="Rapper-responsesive">
         <Image
           preview={{ visible: false }}
           height={300}

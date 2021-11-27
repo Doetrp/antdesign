@@ -1,4 +1,5 @@
 import "./login.css";
+import { Link } from "react-router-dom";
 import { Button, Input, Form, Checkbox } from "antd";
 
 export default function Login() {
@@ -68,9 +69,15 @@ export default function Login() {
               span: 16,
             }}
           >
-            <Checkbox>Remember me</Checkbox>
+            <Checkbox>Remember me</Checkbox>|
+            <div style={{display : "inline-block", color: "black", marginLeft: "10px" }}>
+              <Link to="">
+                <label style={{ color: "black" }}>
+                  Register
+                </label>
+              </Link>
+            </div>
           </Form.Item>
-
           <Form.Item
             wrapperCol={{
               offset: 8,
