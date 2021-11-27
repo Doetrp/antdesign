@@ -70,9 +70,15 @@ export default function Login() {
             }}
           >
             <Checkbox>Remember me</Checkbox>|
-            <div style={{display : "inline-block", color: "black", marginLeft: "10px" }}>
+            <div
+              style={{
+                display: "inline-block",
+                color: "black",
+                marginLeft: "10px",
+              }}
+            >
               <Link to="" style={{ color: "black" }}>
-                  Register
+                Register
               </Link>
             </div>
           </Form.Item>
@@ -83,7 +89,7 @@ export default function Login() {
             }}
           >
             <Button type="primary" htmlType="submit">
-              Submit
+              <Link to="/Rapper">Submit</Link>
             </Button>
           </Form.Item>
         </Form>
